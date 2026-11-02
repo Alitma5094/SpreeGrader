@@ -1,0 +1,33 @@
+
+# SpreeGrader
+
+SpreeGrader is a desktop app for quickly grading Canvas submissions with file types the web interface does not support (like AutoCad and Vectorworks).
+
+
+## Installation
+
+Clone the git repository and install the dependencies
+
+```bash
+  git clone https://github.com/Alitma5094/SpreeGrader.git
+  cd spreegrader
+  uv sync
+```
+
+## Configuration
+To use Spreegrader with any institution by manually configuring a domain and [Personal Access Token](https://community.instructure.com/en/kb/articles/662901-how-do-i-manage-api-access-tokens-in-my-user-account), use the command:
+```bash
+briefcase build
+```
+
+To preconfigure the build with your domains OAuth credentials, use the build script:
+```bash
+python build_institution.py
+```
+    
+## License
+
+This project is licensed under the BSD 3-Clause license. 
+
+This project is not associated with Instructure. All trademarks are property of their respective owners.
+
