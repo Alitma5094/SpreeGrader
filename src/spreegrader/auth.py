@@ -60,7 +60,7 @@ class OAuth:
         return f"http://127.0.0.1:{self.port}/callback"
 
     def headers(self):
-        return {"Authorization": f"Bearer {self.store.get('access_token', '')}"}
+        return {"Authorization": f"Bearer {self.store.get('access_token', '')}", "User-Agent": "SpreeGrader/0.1"}
 
     def ensure_fresh(self):
         if time.time() > self.store.get("expires_at", 0) - 60:
